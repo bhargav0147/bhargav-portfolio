@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Bhargav Kalariya</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#000000',
+                        secondary: '#f3f4f6'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        .service-card {
+            transition: transform 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased bg-white text-gray-900">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white bg-opacity-90 backdrop-blur-sm z-50 border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="text-xl font-bold text-primary">Bhargav.</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html" class="text-gray-500 hover:text-primary px-3 py-2 text-sm font-medium">Home</a>
+                        <a href="projects.html" class="text-gray-500 hover:text-primary px-3 py-2 text-sm font-medium">Projects</a>
+                        <a href="services.html" class="text-primary px-3 py-2 text-sm font-medium">Services</a>
+                        <a href="about.html" class="text-gray-500 hover:text-primary px-3 py-2 text-sm font-medium">About</a>
+                        <a href="contact.html" class="text-gray-500 hover:text-primary px-3 py-2 text-sm font-medium">Contact</a>
+                    </div>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-primary hover:bg-gray-100 focus:outline-none" aria-controls="mobile-menu" aria-expanded="false">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="md:hidden fixed inset-0 z-40 hidden" id="mobile-menu">
+        <div class="absolute top-16 right-0 w-64 h-screen bg-white shadow-lg">
+            <div class="px-5 pt-4 pb-3 space-y-1">
+                <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-500 hover:text-primary hover:bg-gray-100">Home</a>
+                <a href="projects.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-500 hover:text-primary hover:bg-gray-100">Projects</a>
+                <a href="services.html" class="block px-3 py-2 rounded-md text-base font-medium text-primary bg-gray-100">Services</a>
+                <a href="about.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-500 hover:text-primary hover:bg-gray-100">About</a>
+                <a href="contact.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-500 hover:text-primary hover:bg-gray-100">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Header -->
+    <header class="pt-32 pb-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="text-center">
+            <h1 class="text-4xl md:text-5xl font-bold tracking-tight text-primary mb-4">My Services</h1>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">Comprehensive digital solutions tailored to your business needs.</p>
+        </div>
+    </header>
+
+    <!-- Main Services -->
+    <section class="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Mobile App Development -->
+            <div class="service-card bg-white p-8 rounded-xl shadow-sm hover:shadow-md">
+                <div class="w-14 h-14 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center mb-6">
+                    <i data-feather="smartphone" class="text-primary w-6 h-6"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-primary mb-4">Mobile App Development</h3>
+                <p class="text-gray-600 mb-6">High-quality iOS and Android applications using Flutter or native technologies.</p>
+                <ul class="space-y-3 mb-8">
+                    <li class="flex items-start">
+                        <i data-feather="check" class="text-primary w-4 h-4 mt-1 mr-2"></i>
+                        <span class="text-gray-600">Cross-platform (Flutter)</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-feather="check" class="text-primary w-4 h-4 mt-1 mr-2"></i>
+                        <span class="text-gray-600">Native iOS (Swift) and Android (Kotlin)</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-feather="check" class="text-primary w-4 h-4 mt-1 mr-2"></i>
+                        <span class="text-gray-600">UI/UX design integration</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-feather="check" class="text-primary w-4 h-4 mt-1 mr-2"></i>
+                        <span class="text-gray-600">Backend API development</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Web App Development -->
+            <div class="service-card bg-white p-8 rounded-xl shadow-sm hover:shadow-md">
+                <div class="w-14 h-14 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center mb-6">
+                    <i data-feather="cpu" class="text-primary w-6 h-6"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-primary mb-4">Web App Development</h3>
+                <p class="text-gray-600 mb-6">Custom web applications with modern frameworks and scalable architecture.</p>
+                <ul class="space-y-3 mb-8">
+                    <li class="flex items-start">
+                        <i data-feather="check" class="text-primary w-4 h-4 mt-1 mr-2"></i>
+                        <span class="text-gray-600">React, Vue.js, Angular</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-feather="check" class="text-primary w-4 h-4 mt-1 mr-2"></i>
+                        <span class="text-gray-600">Node.js, Express, Django</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-feather="check" class="text-primary w-4 h-4 mt-1 mr-2"></i>
+                        <span class="text-gray-600">API development</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-feather="check" class="text-primary w-4 h-4 mt-1 mr-2"></i>
+                        <span class="text-gray-600">Database design</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Website Development -->
+            <div class="service-card bg-white p-8 rounded-xl shadow-sm hover:shadow-md">
+                <div class="w-14 h-14 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center mb-6">
+                    <i data-feather="globe" class="text-primary w-6 h-6"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-primary mb-4">Website Development</h3>
+                <p class="text-gray-600 mb-6">Responsive, fast-loading websites with modern design and SEO optimization.</p>
+                <ul class="space-y-3 mb-8">
+                    <li class="flex items-start">
+                        <i data-feather="check" class="text-primary w-4 h-4 mt-1 mr-2"></i>
+                        <span class="text-gray-600">HTML5, CSS3, JavaScript</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-feather="check" class="text-primary w-4 h-4 mt-1 mr-2"></i>
+                        <span class="text-gray-600">Tailwind CSS, Bootstrap</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-feather="check" class="text-primary w-4 h-4 mt-1 mr-2"></i>
+                        <span class="text-gray-600">SEO optimization</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-feather="check" class="text-primary w-4 h-4 mt-1 mr-2"></i>
+                        <span class="text-gray-600">Performance optimization</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Wix/Shopify/WordPress -->
+            <div class="service-card bg-white p-8 rounded-xl shadow-sm hover:shadow-md">
+                <div class="w-14 h-14 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center mb-6">
+                    <i data-feather="shopping-cart" class="text-primary w-6 h-6"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-primary mb-4">Wix/Shopify/WordPress</h3>
+                <p class="text-gray-600 mb-6">Professional websites and e-commerce solutions using popular platforms.</p>
+                <ul class="space-y-3 mb-8">
+                    <li class="flex items-start">
+                        <i data-feather="check" class="text-primary w-4 h-4 mt-1 mr-2"></i>
+                        <span class="text-gray-600">Wix website development</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-feather="check" class="text-primary w-4 h-4 mt-1 mr-2"></i>
+                        <span class="text-gray-600">Shopify store setup</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-feather="check" class="text-primary w-4 h-4 mt-1 mr-2"></i>
+                        <span class="text-gray-600">WordPress customization</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-feather="check" class="text-primary w-4 h-4 mt-1 mr-2"></i>
+                        <span class="text-gray-600">E-commerce solutions</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- SaaS Development -->
+            <div class="service-card bg-white p-8 rounded-xl shadow-sm hover:shadow-md">
+                <div class="w-14 h-14 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center mb-6">
+                    <i data-feather="cloud" class="text-primary w-6 h-6"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-primary mb-4">SaaS Development</h3>
+                <p class="text-gray-600 mb-6">Scalable software-as-a-service platforms with subscription billing.</p>
+                <ul class="space-y-3 mb-8">
+                    <li class="flex items-start">
+                        <i data-feather="check" class="text-primary w-4 h-4 mt-1 mr-2"></i>
+                        <span class="text-gray-600">Multi-tenant architecture</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-feather="check" class="text-primary w-4 h-4 mt-1 mr-2"></i>
+                        <span class="text-gray-600">Subscription management</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-feather="check" class="text-primary w-4 h-4 mt-1 mr-2"></i>
+                        <span class="text-gray-600">Cloud deployment</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-feather="check" class="text-primary w-4 h-4 mt-1 mr-2"></i>
+                        <span class="text-gray-600">API integrations</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- CRM Development -->
+            <div class="service-card bg-white p-8 rounded-xl shadow-sm hover:shadow-md">
+                <div class="w-14 h-14 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center mb-6">
+                    <i data-feather="users" class="text-primary w-6 h-6"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-primary mb-4">CRM Development</h3>
+                <p class="text-gray-600 mb-6">Custom CRM solutions tailored to your business processes.</p>
+                <ul class="space-y-3 mb-8">
+                    <li class="flex items-start">
+                        <i data-feather="check" class="text-primary w-4 h-4 mt-1 mr-2"></i>
+                        <span class="text-gray-600">Lead management</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-feather="check" class="text-primary w-4 h-4 mt-1 mr-2"></i>
+                        <span class="text-gray-600">Sales pipeline</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-feather="check" class="text-primary w-4 h-4 mt-1 mr-2"></i>
+                        <span class="text-gray-600">Customer support</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-feather="check" class="text-primary w-4 h-4 mt-1 mr-2"></i>
+                        <span class="text-gray-600">Reporting dashboard</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Custom Software -->
+            <div class="service-card bg-white p-8 rounded-xl shadow-sm hover:shadow-md">
+                <div class="w-14 h-14 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center mb-6">
+                    <i data-feather="code" class="text-primary w-6 h-6"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-primary mb-4">Custom Software</h3>
+                <p class="text-gray-600 mb-6">Tailored solutions designed specifically for your business needs.</p>
+                <ul class="space-y-3 mb-8">
+                    <li class="flex items-start">
+                        <i data-feather="check" class="text-primary w-4 h-4 mt-1 mr-2"></i>
+                        <span class="text-gray-600">Business automation</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-feather="check" class="text-primary w-4 h-4 mt-1 mr-2"></i>
+                        <span class="text-gray-600">Workflow management</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-feather="check" class="text-primary w-4 h-4 mt-1 mr-2"></i>
+                        <span class="text-gray-600">Enterprise solutions</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i data-feather="check" class="text-primary w-4 h-4 mt-1 mr-2"></i>
+                        <span class="text-gray-600">Legacy system modernization</span>
+                    </li>
+                </ul>
+            </div>
+</div>
+    </section>
+
+    <!-- Tech Stack -->
+    <section class="py-16 bg-secondary">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary mb-4">Technologies I Work With</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Modern tools and frameworks for building robust solutions</p>
+            </div>
+            <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow-sm flex items-center justify-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter" class="h-10">
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm flex items-center justify-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="h-10">
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm flex items-center justify-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="Vue.js" class="h-10">
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm flex items-center justify-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" class="h-10">
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm flex items-center justify-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg" alt="WordPress" class="h-10">
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm flex items-center justify-center">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/shopify/shopify-original.svg" alt="Shopify" class="h-10">
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Process Section -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-primary mb-4">My Process</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">A structured approach to delivering exceptional results</p>
+        </div>
+        <div class="grid md:grid-cols-4 gap-8">
+            <div class="text-center">
+                <div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <span class="text-primary font-bold text-xl">1</span>
+                </div>
+                <h3 class="font-medium text-primary mb-2">Consultation</h3>
+                <p class="text-gray-600 text-sm">Understanding your business needs and goals.</p>
+            </div>
+            <div class="text-center">
+                <div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <span class="text-primary font-bold text-xl">2</span>
+                </div>
+                <h3 class="font-medium text-primary mb-2">Planning</h3>
+                <p class="text-gray-600 text-sm">Creating detailed specifications and timeline.</p>
+            </div>
+            <div class="text-center">
+                <div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <span class="text-primary font-bold text-xl">3</span>
+                </div>
+                <h3 class="font-medium text-primary mb-2">Development</h3>
+                <p class="text-gray-600 text-sm">Building and rigorous testing of your solution.</p>
+            </div>
+            <div class="text-center">
+                <div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <span class="text-primary font-bold text-xl">4</span>
+                </div>
+                <h3 class="font-medium text-primary mb-2">Launch & Support</h3>
+                <p class="text-gray-600 text-sm">Deployment and ongoing maintenance.</p>
+            </div>
+</div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-primary text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-6">Have a project in mind?</h2>
+            <p class="text-gray-300 mb-8 text-lg max-w-2xl mx-auto">Let's discuss how I can help bring your vision to life.</p>
+<a href="contact.html" class="inline-flex items-center px-6 py-3 bg-white text-primary font-medium rounded-md hover:bg-gray-100">
+                Get in Touch
+                <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-12 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="col-span-2">
+                    <span class="text-xl font-bold text-primary">Bhargav Kalariya</span>
+                    <p class="text-gray-600 mt-4 max-w-sm">Digital craftsman creating elegant solutions for complex problems.</p>
+                    <div class="flex mt-4 space-x-4">
+                        <a href="https://github.com/bhargavkalariya" class="text-gray-500 hover:text-primary">
+                            <i data-feather="github" class="w-5 h-5"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/bhargavkalariya" class="text-gray-500 hover:text-primary">
+                            <i data-feather="linkedin" class="w-5 h-5"></i>
+                        </a>
+                        <a href="https://instagram.com/bhargavkalariya" class="text-gray-500 hover:text-primary">
+                            <i data-feather="instagram" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+</div>
+                <div>
+                    <h3 class="text-sm font-semibold text-primary uppercase tracking-wider mb-4">Navigation</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-600 hover:text-primary">Home</a></li>
+                        <li><a href="projects.html" class="text-gray-600 hover:text-primary">Projects</a></li>
+                        <li><a href="services.html" class="text-gray-600 hover:text-primary">Services</a></li>
+                        <li><a href="about.html" class="text-gray-600 hover:text-primary">About</a></li>
+                        <li><a href="contact.html" class="text-gray-600 hover:text-primary">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-primary uppercase tracking-wider mb-4">Contact</h3>
+                    <ul class="space-y-2">
+                        <li class="text-gray-600">hello@bhargavkalariya.com</li>
+                        <li class="text-gray-600">+1 (555) 123-4567</li>
+                        <li class="text-gray-600">Ahmedabad, India</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 text-sm">© 2023 Bhargav Kalariya. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-500 hover:text-primary text-sm">Privacy Policy</a>
+                    <a href="#" class="text-gray-500 hover:text-primary text-sm">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('[aria-controls="mobile-menu"]').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuButton = document.querySelector('[aria-controls="mobile-menu"]');
+            
+            if (!mobileMenu.contains(event.target) && event.target !== menuButton && !menuButton.contains(event.target)) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+
+        // Feather icons
+        feather.replace();
+    </script>
+</body>
+</html>
